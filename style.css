@@ -1,0 +1,355 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: url('https://ecrie70.com.br/sistema/conteudos/imagem/g_66_0_1_06062023152401.png') no-repeat center center fixed;
+            background-size: cover;
+            color: hsl(#333);
+        }
+
+        header {
+            background-color: rgba(45, 59, 58, 0.9);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .cta {
+            margin-top: 20px;
+        }
+
+        .cta h1 {
+            font-size: 2.5em;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+            transform: translateY(-5px); /* Sobe 10px */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        .cta-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .cta-float:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        section img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .funcionalidades {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .funcionalidades h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 300px;
+            transition: border-radius 0.4s ease, box-shadow 0.4s ease;
+            display: inline-block;
+            
+        }
+
+        .feature:hover {
+            border-radius: 28px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            transform: translateY(-1px);
+        }
+
+        .depoimentos blockquote {
+            font-style: italic;
+            margin: 20px 0;
+            font-size: 1.2em;         
+        }
+
+        
+        footer {
+            background-color: rgba(45, 59, 58, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer .social a, footer .links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .social a:hover, footer .links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 992px) {
+            .funcionalidades {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                flex: 1 1 100%;
+                max-width: 90%;
+            }
+        }
+
+        /* Modal Login/Cadastro */
+        #modal-login {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2000;
+            display: none;
+        }
+
+        .modal-overlay {
+            position: absolute;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal {
+            position: relative;
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 8px;
+            z-index: 2001;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .modal {
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+        .fechar {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .aba input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .aba button {
+            width: 100%;
+            padding: 12px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /* Novo estilo para a seção Sobre Nós */
+        .integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.integrante {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.integrante img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 3px #f39c12;
+}
+
+.integrante h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.integrante p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.integrante a img {
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+.integrante a:hover img {
+    transform: scale(1.1);
+}
+
+
+.voltar-topo {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.voltar-topo:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+.voltar-topo svg {
+    display: block;
+}
