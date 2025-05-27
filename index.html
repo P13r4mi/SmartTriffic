@@ -1,10 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo de Monitoramento de Trânsito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SmartTraffic</h1>
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/bJeKbCW.png" alt="SmartTraffic Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contatos">Contato</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#figma">Figma</a></li>
+                <li><a href="#" onclick="abrirModal()">Login</a></li>
+            </ul>
+        </nav>
+        <section class="cta">
+            <h1>Otimize seu trajeto com dados de trânsito em tempo real</h1>
+            <p>Evite congestionamentos e economize tempo com nosso aplicativo inovador de monitoramento de trânsito.</p>
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="cta-button">Baixar agora</a>
+        </section>
+    </header>
+
+    <section class="intro">
+        <h2>Controle o trânsito com tecnologia avançada</h2>
+        <p>Nosso aplicativo utiliza satélites e dados avançados para fornecer informações de trânsito em tempo real.</p>
+        <img src="https://blog.toyotasulpar.com.br/wp-content/uploads/2023/09/toyota-melhor-app-gps-2024.jpg" alt="Mapa interativo de trânsito em SP">
+    </section>
+
+    <section id="funcionalidades" class="funcionalidades">
+        <h2>Descubra as funcionalidades que tornam nosso app único</h2>
+        <div class="feature">
+             <h3>Monitoramento em Tempo Real</h3>
+            <p>Acompanhe o tráfego de perto e faça escolhas inteligentes sobre seu trajeto.</p>
+</div>
+
+        </div>
+        <div class="feature">
+            <h3>Previsão de Congestionamentos</h3>
+            <p>Planeje suas viagens com antecedência e evite os pontos mais congestionados.</p>
+        </div>
+        <div class="feature">
+            <h3>Alertas de Trânsito</h3>
+            <p>Receba notificações sobre incidentes e mudanças nas condições do tráfego.</p>
+        </div>
+        <div class="feature">
+            <h3>Integração com Mapas</h3>
+            <p>Visualize rotas alternativas e detalhes do trânsito diretamente no seu mapa favorito.</p>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que os nossos usuários estão dizendo</h2>
+        <blockquote>
+            "Com o aplicativo, consegui reduzir meu tempo de deslocamento diário em 30%! As previsões de tráfego são extremamente precisas." 
+            <footer>- João, Usuário de São Paulo</footer>
+        </blockquote>
+        <img src="https://www.trisul-sa.com.br/blog/wp-content/uploads/2020/01/transito-em-sao-paulo.jpeg" alt="Trânsito intenso na cidade">
+        <p>95% dos usuários relatam uma melhoria no tempo de viagem.</p>
+    </section>
+
+    <!-- Nova seção Sobre Nós -->
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos um grupo dedicado a desenvolver soluções inovadoras para o monitoramento de trânsito. Conheça nossa equipe:</p>
+        <div class="integrantes">
+            <div class="integrante">
+                <h3>Daniel Leite</h3>
+                <p>Scrum Master e Product Owner (P.O.).</p>
+                <a href="https://instagram.com/danielfl.0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"></a>
+            </div>
+            <div class="integrante">
+                <h3>Raul Pierami</h3>
+                <p>Gestor de projeto e Especialista em Arquitetura de Sistemas.</p>
+                <a href="https://instagram.com/raulpierami_" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"></a>
+            </div>
+            <div class="integrante">
+                <h3>Guilherme Pichini</h3>
+                <p>Analista de Requisitos e Especialista em Arquitetura de Sistemas.</p>
+                <a href="https://instagram.com/_pichini_" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"></a>
+            </div>
+            <div class="integrante">
+                <h3>Matheus Saraiva</h3>
+                <p>Desenvolvedor de Algoritimos e Analista de Suporte e Manutenção.</p>
+                <a href="https://instagram.com/mathexsv" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"></a>
+            </div>
+            <div class="integrante">
+                <h3>Sabrina Montossa</h3>
+                <p>Consultora de Usabilidade e Analista de Viabilidade.</p>
+                <a href="https://instagram.com/montossa._" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="figma">
+    <h2>Visualize nosso protótipo no Figma</h2>
+    <p>Confira como será a experiência do nosso aplicativo acessando o protótipo interativo no Figma:</p>
+    <a href="https://www.figma.com/proto/KC6mIlEm3UKfEMlT5gIykH/Untitled?node-id=68-287&p=f&t=no2qr59fmkqh39AJ-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=68%3A287&show-proto-sidebar=1" target="_blank" class="cta-button">Ver protótipo no Figma</a>
+    </section>
+
+
+    <section id="contatos" class="final-cta">
+        <h2>Pronto para otimizar o seu tempo?</h2>
+        <p>Baixe nosso aplicativo agora e experimente o poder dos dados de trânsito em tempo real.</p>
+        <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="cta-button">Baixar agora</a>
+    </section>
+
+    <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="cta-float">Baixar Agora</a>
+
+    <footer>
+        <div class="contact">
+            <p>Email: smarttraffic@aplicativo.com</p>
+            <p>Telefone: (11) 996112-7341</p>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+    </footer>
+
+    <!-- Modal Login/Cadastro -->
+    <div id="modal-login">
+        <div class="modal-overlay" onclick="fecharModal()"></div>
+        <div class="modal">
+            <span class="fechar" onclick="fecharModal()">×</span>
+            <div class="tabs">
+                <button onclick="mostrarAba('login')">Login</button>
+                <button onclick="mostrarAba('cadastro')">Cadastro</button>
+            </div>
+            <div id="aba-login" class="aba">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <button>Entrar</button>
+            </div>
+            <div id="aba-cadastro" class="aba" style="display: none;">
+                <h2>Cadastro</h2>
+                <input type="text" placeholder="Nome completo" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <button>Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    
+        <a href="#" class="voltar-topo" title="Voltar ao topo" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28" height="28">
+        <path d="M12 2L5 9h4v8h6V9h4l-7-7z"/>
+    </svg>
+</a>
+
+
+    <script>
+        function abrirModal() {
+            document.getElementById('modal-login').style.display = 'block';
+        }
+
+        function fecharModal() {
+            document.getElementById('modal-login').style.display = 'none';
+        }
+
+        function mostrarAba(aba) {
+            document.getElementById('aba-login').style.display = 'none';
+            document.getElementById('aba-cadastro').style.display = 'none';
+            document.getElementById('aba-' + aba).style.display = 'block';
+        }
+
+        
+        // Mostrar/esconder o botão ao rolar
+window.addEventListener('scroll', () => {
+    const botao = document.querySelector('.voltar-topo');
+    botao.style.display = window.scrollY > 400 ? 'block' : 'none';
+});
+
+
+
+    </script>
+
+
 </body>
+</html>
